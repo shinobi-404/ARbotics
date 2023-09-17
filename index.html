@@ -1,0 +1,111 @@
+<!--Shellhacks AR project website-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your AR Education Website</title>
+    <link rel="icon" type="image/x-icon" href="images/signlang.jpg">
+
+    <!-- Add your CSS links for styling here -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- AR update here  -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.5/aframe/build/aframe-ar.js"></script>
+    <script src="ar-interactions.js"></script>
+
+
+</head>
+
+
+
+<body>
+    <header>
+        <!-- Title Page -->
+        <section class="title-page">
+            
+            <h1>Welcome to your AR Education Website</h1>
+            <!-- AR Section for Interactive Science Lessons -->
+           <!-- AR Container for Interactive Science Lessons -->
+            <div class="ar-container">
+                <a-scene embedded arjs="trackingMethod: best; sourceType: webcam;">
+                    <!-- Hiro marker -->
+                    <a-marker preset="hiro">
+                        <!-- Draggable object -->
+                        <a-plane position="0 0.5 0" rotation="-90 0 0" width="1" height="1" color="yellow" class="draggable"></a-plane>
+                    </a-marker>
+                    <a-entity camera></a-entity>
+                </a-scene>
+            </div>
+
+            <script src="ar-interactions.js"></script>
+
+            <p>Empowering Special Needs Education Through Augmented Reality (AR)</p>
+        </section>
+    </header>
+    
+
+    <main>
+        <!-- Demo Sections -->
+        <section class="demo-section">
+            
+            <h2>Section 1: Interactive Science Lessons</h2>
+            <p>Explore a virtual laboratory where students can perform hands-on science experiments in an immersive AR environment. Our technology makes complex concepts accessible through interactive 3D models and simulations.</p>
+            <!-- Add images, buttons, or other interactive AR elements here -->
+        </section>
+        <!-- AR Container for Interactive Science Lessons -->
+        <div class="ar-container">
+            <a-scene embedded aria-activedescendant="trackingMethod: best; sourceType: webcam;">
+                <!-- Hiro marker -->
+                <a-marker preset="hiro">
+                    <!-- Draggable object -->
+                    <a-plane position="0 0.5 0" rotation="-90 0 0" width="1" height="1" color="yellow" class="draggable"></a-plane>
+                </a-marker>
+                <a-entity camera></a-entity>
+            </a-scene>
+        </div> 
+
+
+        <!-- Two -->
+        <section class="demo-section">
+            <h2>Section 2: Inclusive Language Learning</h2>
+            <p>Discover how our AR-assisted language learning tool helps students with language difficulties improve their communication skills. Real-time language translation, interactive storytelling, and pronunciation assistance are just a tap away.</p>
+            <!-- Add images, buttons, or other interactive AR elements here -->
+        </section>
+
+        <section class="demo-section">
+            <h2>Section 3: Math Made Fun</h2>
+            <p>Transform math lessons into engaging experiences. With our AR app, students can visualize mathematical concepts, solve problems interactively, and gain confidence in their math skills.</p>
+            <!-- Add images, buttons, or other interactive AR elements here -->
+            <!-- <a-scene embedded arjs="trackingMethod: best; sourceType: webcam;">
+                 Hiro marker for Cube -->
+               
+                
+                <!-- Custom marker for Taj Mahal (assuming you've a pattern for it named 'taj-pattern.patt') -->
+                <!-- <a-marker preset="Hiro" type="pattern" url="path/to/future_car-pattern.patt"> -->
+                    <!-- Taj Mahal object -->
+                    
+                    <!-- <a-gltf-model src="future_car.glb" scale="0.05 0.05 0.05" position="0 0.5 0"></a-gltf-model> -->
+                <!-- </a-marker> -->
+                
+                <!-- <a-entity camera></a-entity>
+            </a-scene> -->
+            <a-marker preset="hiro">
+                <!-- Future Car object -->
+                <a-gltf-model src="future_car.glb" scale="0.05 0.05 0.05" position="0 0.5 0"></a-gltf-model>
+            </a-marker>
+            
+        </section>
+
+        <!-- Add more demo sections as needed -->
+    </main>
+
+    <footer>
+        <p>&copy; Im-pair. 2023. Areeb Yousuf, Dena Attar, Rayan Vorajee, Iman Attar</p>
+    </footer>
+
+    <!-- Add your JavaScript code for AR integration here -->
+    <script src="script.js"></script>
+</body>
+</html>

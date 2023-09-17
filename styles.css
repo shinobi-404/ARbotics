@@ -1,0 +1,117 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4 p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define basic styles for the body 
+Descriptions under the sections*/
+body {
+    font-family: Lucida Sans, sans-serif;
+    
+    background-color: #5468da;
+    background-image: linear-gradient(to top, rgba(172, 182, 240, 0.8), rgba(37, 58, 175, 0.8)), url("../../images/bg2.jpg");
+    background-size: auto,
+cover;
+    background-attachment: fixed,
+fixed;
+    background-position: center,
+center;
+    color: #fff;
+    text-align: left;
+    padding: 20px 0;
+    line-height: 2;
+}
+
+/* Style the header
+Welcome to your AR Education Website */
+/* header {
+    background-color: #5468da;
+    background-image: linear-gradient(to top, rgba(172, 182, 240, 0.8), rgba(37, 58, 175, 0.8)), url("../../images/bg2.jpg");
+        background-size: auto,
+ cover;
+        background-attachment: fixed,
+ fixed;
+        background-position:center,
+ center;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10;
+    /* line-height: 15.1; 
+    line-height: 15;
+        
+} */
+
+header {
+    /*background-color: #5468da;*/
+    
+    background-size: auto, cover;
+    background-attachment: fixed, fixed;
+    background-position: center, center;
+    color: #fff;
+    text-align: center;
+    padding: 40px 10; /* Increased padding to create space */
+    /* line-height: 15.1; */
+}
+
+
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px 0;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style main content sections */
+main {
+    padding: 40px;
+}
+/*This is For Section 1 of the website*/
+h2 {
+    
+    color: #fff;
+    text-align: left;
+    padding: 20px 0;
+    
+}
+
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Add some spacing to the footer link */
+footer a {
+    margin-left: 5px;
+}
+.ar-container {
+    width: 100vw; /* Adjust this value for the desired width */
+    height: 55vw; /* Adjust this value for the desired height */
+    margin: 10 auto; /* Center the container */
+    /* overflow: hidden; /* Hide excess video feed */
+} 
+
+.draggable {
+    cursor: grab;
+}
+
+.draggable:active {
+    cursor: grabbing;
+}
